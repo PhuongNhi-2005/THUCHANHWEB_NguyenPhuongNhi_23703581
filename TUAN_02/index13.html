@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1,p{
+        color: brown;
+        font-weight: bolder;
+    }
+    input{
+        border-radius: 10px;
+        border-color: rebeccapurple;
+    }
+    button:hover,button:active{
+        color: yellow;
+        background-color: brown;
+    }
+</style>
+<body>
+        <h1>Form đặt bàn quán ăn</h1>
+        <p>Họ và tên:</p>
+            <input type="text" name="hoten"><br><br>
+        <p>Số người:</p>
+        <select name="songuoi" style="width: 150px;">
+            <option value="">Chọn số người</option>
+            <option value="1">1 người</option>
+            <option value="2">2 người</option>
+            <option value="3">3 người</option>
+            <option value="4">4 người</option>
+            <option value="5+">5 người trở lên</option>
+        </select><br><br>
+        <p>Ngày giờ đặt bàn:</p>
+            <input type="datetime-local" name="thoigian"><br><br>
+        <p>Yêu cầu đặc biệt:</p>
+            <textarea name="yeucau" rows="3" cols="30" placeholder="Nhập yêu cầu của bạn..."></textarea><br><br>
+        <button type="submit">Đặt bàn</button>
+</body>
+</html>

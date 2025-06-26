@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 5px;
+            border-style:groove;
+
+        }
+        .a1,.a2,.a3,.a4,.a5,.a6{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            border-style:groove;
+            text-align: center;
+            
+            color: rgb(25, 10, 240);
+        }
+        .a1,.a3,.a5{
+            background-color: rgb(245, 232, 46);
+        }
+        table,th,td,tr{
+            border: 1px solid black;
+            border-collapse:collapse ;
+            padding: 10px;
+            text-align: left;
+        }
+        h1{
+            font-style: italic;
+            color: rgb(204, 6, 23);
+            background-color: yellow;
+            text-align: center;
+        }
+        tr{
+            background-color: rgb(145, 228, 200);
+            color: rgb(226, 14, 85);
+            
+        }
+    </style>
+    <body>
+        <h1>Thời Khóa Biểu</h1>
+        <div class="container">
+            <div class="a1">
+                <div>Thứ</div>
+                <div>Môn học</div>
+                <div>Giờ học</div>
+                <div>Phòng học</div>
+            </div>
+            <div class="a2">
+                <div>Thứ Hai</div>
+                <div>Toán</div>
+                <div>7:00 - 8:30</div>
+                <div>101</div>
+            </div>
+                <div class="a3">
+                <div>Thứ Ba</div>
+                <div>Văn</div>
+                <div>8:45 - 10:15</div>
+                <div>102</div>
+            </div>
+            <div class="a4">
+                <div>Thứ Tư</div>
+                <div>Tiếng Anh</div>
+                <div>10:30 - 12:00</div>
+                <div>103</div>
+            </div>
+            <div class="a5">
+                <div>Thứ Năm</div>
+                <div>Lý</div>
+                <div>13:00 - 14:30</div>
+                <div>104</div>
+            </div>
+            <div class="a6">
+                <div>Thứ Sáu</div>
+                <div>Hóa</div>
+                <div>14:45 - 16:15</div>
+                <div>105</div>
+            </div>
+        </div>
+    </body>
+</html>

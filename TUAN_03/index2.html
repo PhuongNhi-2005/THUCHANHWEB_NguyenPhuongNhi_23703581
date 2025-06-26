@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            margin: 30px;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+        h1{
+            font-weight:bold;
+            color: blueviolet;
+            text-align: center;
+        }
+        .mh1,.mh2,.mh3,.mh4{
+            display: flex;
+            margin: 20px;
+            border-radius: 20px;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            box-shadow: 3px 3px;
+        }
+        .mh1, .mh4{
+            background-color: pink;
+        }
+        .mh2.mh4{
+            background-color: aqua;
+        }
+    
+    </style>
+    <body>
+    <h1>DANH SÁCH MÔN HỌC YÊU THÍCH</h1>
+    <div class="container">
+        <div class="mh1"> Môn Toán </div>
+        <div class="mh2"> Môn Hóa  </div>
+        <div class="mh3"> Môn Anh  </div>
+        <div class="mh4"> Môn Lí  </div>
+    </div>
+</body>
+</html>

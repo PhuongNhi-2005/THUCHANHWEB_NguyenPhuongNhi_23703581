@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            color:rgb(128, 74, 74) ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            gap: 10px;
+            justify-content:center;
+            align-items:center;
+        }
+        input{
+            font-size: larger;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(243, 180, 180);
+            border-color: yellow;
+            border-radius: 20px
+        }
+        button:hover, button:active {
+             background-color: rgb(233, 229, 5);
+        }
+    </style>
+    <body>
+        <h1>Form đăng ký thông tin</h1>
+        <div class="container">
+            <div>Tên:   <input type="text" name="name"></div>
+            <div>Email:   <input type="email" name="email"></div>
+            <div>Số điện thoại:   <input type="text" name="phone"></div>
+            <div>Giới tính: <input type="radio" name="gender" value="Nam"> Nam
+                <input type="radio" name="gender" value="Nữ"> Nữ</div>
+            <div><button>Gửi</button></div>
+        </div>
+</body>
+</html>

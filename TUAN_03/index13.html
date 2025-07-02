@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    h1,button {
+        color: brown;
+        font-weight: bolder;
+        text-align: center;
+    }
+    p {
+        color: brown;
+        font-weight: bolder;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        padding: 20px;;
+        margin: 40px;
+        background-color: rgb(255, 244, 229);
+        border-radius: 10px;
+        border-color: brown;
+        border-style: groove;
+    }
+    input {
+        border-radius: 10px;
+        border-color: rebeccapurple;
+    }
+    .bt{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    button:hover, button:active {
+        color: yellow;
+        background-color: brown; 
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <h1>FORM ĐẶT BÀN QUÁN ĂN</h1>
+    <div class="container">
+    <div class="hoten">
+    <p>Họ và tên:</p>
+    <input type="text" name="hoten">
+    </div><br>
+    <div class="cot1">
+    <p>Số người:</p>
+    <select name="songuoi" style="width: 150px;">
+        <option value="">Chọn số người</option>
+        <option value="1">1 người</option>
+        <option value="2">2 người</option>
+        <option value="3">3 người</option>
+        <option value="4">4 người</option>
+        <option value="5+">5 người trở lên</option>
+    </select>
+    <p>Ngày giờ đặt bàn:</p>
+    <input type="datetime-local" name="thoigian">
+    </div>
+    <div class="cot2">
+    <p>Yêu cầu đặc biệt:</p>
+    <textarea name="yeucau" rows="3" cols="30" placeholder="Nhập yêu cầu của bạn..."></textarea>
+    </div>
+    </div>
+    <DIV class="bt"><button type="submit">Đặt bàn</button></DIV>
+</body>
+</html>

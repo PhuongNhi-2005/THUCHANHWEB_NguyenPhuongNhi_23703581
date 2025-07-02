@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            background-color: rgb(0, 3, 136);
+            color: deeppink;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 5fr 5fr;
+            gap: 10px;
+            color: rgb(0, 2, 100);
+            font-weight: bolder;
+            padding: 30px;
+            margin: 20px;
+            background-color:rgb(255, 195, 227);
+            border-radius: 50px;
+            border-style: groove ;
+            border-color: rgb(0, 30, 91);
+            border-width: 5px;
+            box-shadow: 3px 0 3px 0;
+        }
+        .danhgia{
+            display: flex;
+            color: rgb(6, 88, 126);
+        }
+        input{
+            border-radius: 4px 4px;
+            color: rgb(0, 2, 100);
+        }
+        input[type="radio"]{
+            accent-color: yellow;
+        }
+        button{
+            display: block;
+            margin: auto;
+            border-radius: 2px 2px;
+            box-shadow: 3px 0 3px;
+            border-radius: 5px;
+            color: deeppink;
+        }
+        button:hover,button:active{
+            background-color:rgb(0, 2, 100) ;
+            font-weight: bolder;
+            box-shadow: none;
+            
+        }
+</style>
+<body>
+    <form>
+        <h1>Khảo sát người dùng về TikTok</h1>
+        <div class="container">
+        Họ và tên: <div class="tt"><input type="text"></div>
+        Email: <div class="tt"><input type="text"></div>
+        Đánh giá: <div class="danhgia">
+        
+            <div><label><input type="radio" id="star1" name="rating" value="1" > 1★</label></div>
+            <div><label><input type="radio" id="star2" name="rating" value="2" > 2★</label></div>
+            <div><label><input type="radio" id="star3" name="rating" value="3" > 3★</label></div>
+            <div><label><input type="radio" id="star4" name="rating" value="4" > 4★</label></div>
+            <div><label><input type="radio" id="star5" name="rating" value="5" > 5★</label></div>
+        </div>
+         <div>Ý kiến khác: </div> 
+         <textarea ></textarea>
+        </div>
+        <button>Gửi</button>
+        
+    </form>
+</body>
+</html>

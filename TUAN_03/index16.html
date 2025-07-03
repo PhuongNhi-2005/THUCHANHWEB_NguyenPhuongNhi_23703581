@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    button:hover,button:active{
+        background-color: rgba(139, 0, 0, 0.685);
+        font-weight: bold;
+    }
+    .ip,.ss,h2{
+        display: grid;
+        grid-template-areas: 
+        header header
+        menu content
+        footer footer;
+        grid-template-columns: 5fr 5fr 5fr;
+        padding: 10px;
+        margin: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(212, 250, 254);
+        border-radius: 20px;
+    }
+    h2{
+        background-color: aqua;
+    }
+    p{
+        font-weight: bolder;
+        font-size: larger;
+    }
+    button{
+        border-radius: 3px 3px;
+        box-shadow:2px 2px;
+        font-size: large;
+    }
+    H1{
+            color: darkred;
+            text-align: center;
+            
+    }
+</style>
+<body>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <h2>IPHONE</h2>
+    <div class="ip">
+        <div id ="dt1" class="card1">
+            <h3>IPhone 15</h3>
+            <img src="./hinhanh/ip15.jpg" alt="" width="200px"><br>
+            <p>Giá: 25.000.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div id = "dt2" class="card2">
+            <h3>IPhone 14</h3>
+            <img src="./hinhanh/ip14.png" alt="" width="100px"><br>
+            <p>Giá: 14.600.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div id="3" class="card3">
+            <h3>iPhone 13</h3>
+            <img src="./hinhanh/ip13.png" alt="" width="200px"><br>
+            <p>Giá: 12.000.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div id="4" class="card4">
+            <h3>iPhone 12</h3>
+            <img src="./hinhanh/ip12.png" alt="" width="130px"><br>
+            <p>Giá: 10.000.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <h2>SAMSUNG</h2>
+    <div class="ss">
+        <div id="ss1" class="card5">
+            <h3>Samsung Galaxy 25</h3>
+            <img src="./hinhanh/SamsungGalaxyS25.jpg" alt="" width="200px">
+            <p>Giá: 22.990.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div id="ss2" class="card6">
+            <h3>Samsung Galaxy 24</h3>
+            <img src="./hinhanh/samsunggalaxys24.jpg" alt="" width="200px">
+            <p>Giá: 16.790.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div id="ss3" class="card7">
+            <h3>Samsung Galaxy 23</h3>
+            <img src="./hinhanh/samsunggalaxys23.jpg" alt="" width="200px">
+            <p>Giá: 13.790.000đ</p>
+            <button>Mua ngay</button>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+</body>
+</html>

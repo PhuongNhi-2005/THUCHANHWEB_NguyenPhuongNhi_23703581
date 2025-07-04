@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <Form>
+        <h1>Khảo sát ý kiến về trải nghiệm website</h1>
+        <p>Họ và tên:</p> 
+        <input type="text"><br></br>
+        <p>Giới tính:</p> 
+        <input type="radio" name="gioitinh" value="Nam">Nam 
+        <input type="radio" name="gioitinh" value="Nữ">Nữ
+        <input type="radio" name="gioitinh" value="Khác">Khác  <br></br>
+        <p>Mức độ am hiểu lập trình: </p>
+        <Select name="Trình độ" id="trinhdo" style="width: 150px;">
+            <option value="">Chọn mức độ</option>
+            <option value="beginner">Người mới bắt đầu</option>
+            <option value="intermediate">Trình độ trung bình</option>
+            <option value="advanced">Nâng cao / chuyên nghiệp</option>
+        </Select><br></br>
+        <p>Trải nghiệm của bạn:</p>
+            <label><input type="checkbox">Giao diện dễ sử dụng</label>
+            <label><input type="checkbox">Nội dung rõ ràng</label>
+            <label><input type="checkbox">Tốc độ tải trang nhanh</label>
+            <label><input type="checkbox">Tính năng hữu ích</label>
+            <label><input type="checkbox">Phù hợp người mới học</label>
+        <p>Góp ý trải nghiệm: </p>
+            <textarea name="feedback" rows="3" cols="30" placeholder=""></textarea>
+            <br></br>
+        <Button>Gửi</Button>
+        </Form>
+</body>
+</html>

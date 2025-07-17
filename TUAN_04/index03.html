@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="hoten">
+    <button onclick="inraten()">Click</button>
+    <p id="ketqua"></p>
+    <script>
+        function inraten() {
+            var hoten = document.getElementById("hoten").value
+            var kq = "";
+            if (hoten === "") {
+                kq = "Chua nhap";
+            } else if (!isNaN(hoten)) {
+                kq = "Ban vua nhap so";
+            } else {
+                kq = "Ban vua nhap text";
+            }
+            document.getElementById("ketqua").innerText = kq
+        }
+    </script>
+</body>
+
+</html>

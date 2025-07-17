@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập giá trị: <input type="text" id="nhapgiatri">
+    <button onclick="checkInput()">Kiểm tra giá trị</button>
+
+    <p id="giatri"></p>
+
+    <script>
+        function checkInput(){
+            var inputValue = document.getElementById("nhapgiatri").value;
+
+            if (nhapgiatri === ""){
+                document.getElementById("giatri").innerText = "Chưa có dữ liệu, hãy nhập dữ liệu"
+                document.getElementById("giatri").style.color = "red"
+            }
+            else{
+                document.getElementById("giatri").innerText="Bạn đã nhập " + inputValue;
+            }
+        }
+    </script>
+</body>
+</html>

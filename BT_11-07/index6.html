@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập số thứ nhất: <input type="text" id="so1"><br><br>
+    Nhập số thứ hai: <input type="text" id="so2"><br><br>
+    <button onclick="calculateSum()">Tổng</button>
+
+    <p id="tong"></p>
+
+    <script>
+        function calculateSum(){
+            var so1 = (document.getElementById("so1").value);
+            var so2 = (document.getElementById("so2").value);
+        if (isNaN(so1) || isNaN(so2)){
+            document.getElementById("tong").innerText = "Chưa có dữ liệu để tính, hãy nhập dữ liệu số"
+        }
+        if (so1 === "" || so2 === ""){
+            document.getElementById("tong").innerText = "Vui lòng nhập đủ số"
+        }
+    
+        else{// Tính tổng và hiển thị kết quả
+            var sum = Number(so1) + Number(so2);
+            document.getElementById("tong").innerText = "Tổng của 2 số là " + sum;
+        }
+    }
+    </script>
+</body>
+</html>

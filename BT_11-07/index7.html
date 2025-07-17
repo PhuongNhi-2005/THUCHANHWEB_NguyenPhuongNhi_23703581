@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function ktrasdt(){
+        var a = document.getElementById("sdt").value
+
+        var b = /^\d{10}$/;
+
+        if(b.test(a)) {
+            document.getElementById("so").innerText="SĐT hợp lệ"
+        }
+        else{
+            document.getElementById("so").innerText="SĐT không hợp lệ"
+        }
+
+
+    }
+</script>
+<body>
+    Nhập SĐT: <input type="text" id="sdt">
+    <button onclick="ktrasdt()">Kiểm Tra</button>
+    <p id="so"></p>
+</body>
+</html>

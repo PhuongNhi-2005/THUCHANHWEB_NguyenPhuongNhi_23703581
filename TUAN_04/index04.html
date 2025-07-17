@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Nhập số thứ nhất: <input type="text" id="so1"> Nhập số thứ hai: <input type="text" id="so2">
+    <button onclick="tinhtong()">ketqua</button>
+    <p id="tong">Kết quả:</p>
+    <script>
+        function tinhtong() {
+            var so1 = document.getElementById("so1").value
+            var so2 = document.getElementById("so2").value
+            var sum = "Kết quả: " + (Number(so1) + Number(so2))
+            document.getElementById("tong").innerText = sum
+
+        }
+    </script>
+</body>
+
+</html>
